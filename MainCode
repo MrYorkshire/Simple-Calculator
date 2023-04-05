@@ -1,0 +1,14 @@
+while True:
+    # Take user input
+    equation = input("Enter an equation (or 'q' to quit): ")
+
+    # Check if user wants to quit
+    if equation.lower() == "q":
+        break
+
+    # Evaluate the equation and print the result
+    try:
+        result = eval(equation)
+        print("Result:", result)
+    except:
+        print("Invalid equation. Please try again.")
